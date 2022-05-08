@@ -6,6 +6,7 @@ import {
   AccountBox,
   Pages,
   Group,
+  ModeNight,
 } from "@mui/icons-material";
 import {
   Box,
@@ -14,6 +15,7 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Switch,
 } from "@mui/material";
 import React from "react";
 
@@ -75,6 +77,14 @@ const Sidebar = () => {
               <AccountBox />
             </ListItemIcon>
             <ListItemText primary="Profile" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#toggleDarkMode">
+            <ListItemIcon>
+              <ModeNight />
+            </ListItemIcon>
+            <Switch />
           </ListItemButton>
         </ListItem>
       </List>
