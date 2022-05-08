@@ -1,6 +1,6 @@
 import React from "react";
 import { Favorite, FavoriteBorder, MoreVert, Share } from "@mui/icons-material";
-import PostImg from "../assets/p.jpg";
+import PostImg from "../assets/p1.jpg";
 
 import {
   Avatar,
