@@ -12,7 +12,6 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import DOJImg from "../assets/0.jpg";
 import PostImg from "../assets/p.jpg";
 
 const Feed = () => {
@@ -31,6 +30,8 @@ const Feed = () => {
               <MoreVert />
             </IconButton>
           }
+          title="You are all Invited to Rohey Cham's Birthday"
+          subheader="January 20, 2021"
         />
         {/* image */}
         <CardMedia
