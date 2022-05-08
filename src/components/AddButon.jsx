@@ -1,10 +1,12 @@
-import React from "react";
-import { Tooltip, Fab } from "@mui/material";
+import React, { useState } from "react";
+import { Tooltip, Fab, Modal, Box } from "@mui/material";
 import { Add } from "@mui/icons-material";
 const AddButton = () => {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <Tooltip
+        onClick={(e) => setOpen(true)}
         title="Add Post"
         sx={{
           position: "fixed",
@@ -17,6 +19,15 @@ const AddButton = () => {
           <Add />
         </Fab>
       </Tooltip>
+
+      <Modal
+        open={open}
+        onClose={(e) => setOpen(false)}
+        aria-labelledby="add-post-modal"
+        aria-describedby="add-post-modal-description"
+      >
+        <Box>Hi from Modal</Box>
+      </Modal>
     </>
   );
 };
