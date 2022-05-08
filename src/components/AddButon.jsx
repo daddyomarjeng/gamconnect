@@ -60,7 +60,15 @@ const AddButton = () => {
         aria-labelledby="add-post-modal"
         aria-describedby="add-post-modal-description"
       >
-        <Box width={400} height={280} bgcolor="white" p={3} borderRadius={5}>
+        <Box
+          width={400}
+          height={280}
+          p={3}
+          borderRadius={5}
+          // bgcolor="white"
+          bgcolor="background.default"
+          color="text.primary"
+        >
           <Typography variant="h6" color="gray" textAlign="center">
             Create Post
           </Typography>
