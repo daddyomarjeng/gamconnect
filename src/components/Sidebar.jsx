@@ -81,12 +81,15 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#toggleDarkMode">
+            <ListItemButton>
               <ListItemIcon>
                 <ModeNight />
               </ListItemIcon>
               <Switch
-                onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+                onChange={(e) => {
+                  // console.log(mode);
+                  setMode(mode === "light" ? "dark" : "light");
+                }}
               />
             </ListItemButton>
           </ListItem>
